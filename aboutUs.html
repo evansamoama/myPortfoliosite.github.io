@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About ME</title>
+</head>
+<body>
+    <nav>
+        
+        <ul id ="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="services.html">Services</a></li>
+            <li><a href="myportfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>             
+                     
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+ <!-----------------About---------------->
+<div id ="about">
+    <div class ="container">
+        <div class ="row">
+        <div class="about-col-1">
+            <image src="picture1.png">
+            </div>
+            <div class ="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Welcome to my portfolio website!<br> I am a cybersecurity and systems administration enthusiast with a deep passion for information technology. 
+                    My goal is to use my skills and knowledge to help organizations and individuals stay safe in the digital world.
+                    Through my work and studies, I have gained expertise in network security, virtualization, incident response, and much more.
+                     I have a proven track record of configuring and maintaining complex IT systems, ensuring that they operate smoothly and securely.
+                    I am also committed to staying up-to-date with the latest developments in the field and am constantly looking for ways to expand my knowledge and skill set.
+                    I am excited to showcase my projects and accomplishments on this website, and I look forward to connecting with others who share my passion for cybersecurity and information technology.
+                    </p>
+
+                    <div class ="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web Interface</li>
+                            <li><span>UI/UX</span> <br> Designing Web Interface</li>
+                            <li><span>UI/UX</span> <br> Designing Web Interface</li>
+                            <li><span>UI/UX</span> <br> Designing Web Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>2022-2023</span> <br> Currently serving as a cybersecurity expert at Cisco,
+                                where I am responsible for managing and securing the IT infrastructure of the organization</li>
+                            <li><span>2021-2022</span> <br> Served as a team lead at Alphabet cybersecurity systems,
+                             where I led a team responsible for managing and securing a large-scale IT infrastructure.</li>
+                            <li><span>2019-2020</span> <br>Interned at Microsoft, gaining hands-on experience in cybersecurity, 
+                            systems administration, and information technology. .</li>
+                       </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                                                    
+                             <li><span>2020-current</span> <br> Tertiary Education @ Ghana Communication Technology University</li>
+                             <li><span>2006-2015</span> <br> Basic & Middle School education @ Peniel Educational Complex</li>
+                             <li><span>2016-2019</span> <br> High School Education @ Oyoko Methodist Senior High</li>   
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");   
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script> 
+</body>
+</html>

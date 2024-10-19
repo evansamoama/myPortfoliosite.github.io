@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/953d612bc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "header">
+        <div class = "container">
+        <nav>
+            <img src ="newlogo.png" class = "logo">
+            <ul id ="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="myportfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class ="header-text">
+            <p>Systems Admininstrator</p>
+            <p><h1>Hi, I'm <span>Evans</span> <br>Amoama from Ghana</h1></p>
+            </div>
+    </div>
+</div>
+<!-----------------About---------------->
+<div id ="about">
+    <div class ="container">
+        <div class ="row">
+        <div class="about-col-1">
+            <image src="picture1.png">
+            </div>
+            <div class ="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Welcome to my portfolio website!<br> I am a cybersecurity and systems administration enthusiast with a deep passion for information technology. 
+                    My goal is to use my skills and knowledge to help organizations and individuals stay safe in the digital world.
+                    Through my work and studies, I have gained expertise in network security, virtualization, incident response, and much more.
+                     I have a proven track record of configuring and maintaining complex IT systems, ensuring that they operate smoothly and securely.
+                    I am also committed to staying up-to-date with the latest developments in the field and am constantly looking for ways to expand my knowledge and skill set.
+                    I am excited to showcase my projects and accomplishments on this website, and I look forward to connecting with others who share my passion for cybersecurity and information technology.
+                    </p>
+
+                    <div class ="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            
+                            <li><span>Network security</span><br>  routine monitoring of network systems for security breaches,
+                             carries out simulated attacks to identify vulnerabilities</li>
+                            <li><span>Server Administration</span> <br> maintenance, configuration, and reliable operation 
+                            of computer systems and servers.</li>
+                            <li><span>Firewall Configuration</span> <br> maintaining IT infrastructure systems 
+                                safe from an external security breach</li>
+                            <li><span>Penetration Testing</span> <br> Create new testing methods to identify vulnerabilities.
+                         Perform physical security assessments of systems, servers and other network devices</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>2022-2023</span> <br> Currently serving as a cybersecurity expert at Cisco,
+                                where I am responsible for managing and securing the IT infrastructure of the organization</li>
+                            <li><span>2021-2022</span> <br> Served as a team lead at Alphabet cybersecurity systems,
+                             where I led a team responsible for managing and securing a large-scale IT infrastructure.</li>
+                            <li><span>2019-2020</span> <br>Interned at Microsoft, gaining hands-on experience in cybersecurity, 
+                            systems administration, and information technology. .</li>
+                       </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                                                    
+                             
+                            <li><span>2020-current</span> <br> Tertiary Education @ Ghana Communication Technology University</li>
+                            <li><span>2016-2019</span> <br> High School Education @ Oyoko Methodist Senior High</li> 
+                             <li><span>2003-2016</span> <br> Basic & Middle School education @ Peniel Educational Complex</li>
+                               
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services---------->
+<div id ="Services">
+    <div class ="container">
+        <h1 class ="subtitle">MY SERVICES</h1>
+        <div class="service-list">
+            
+            <div>
+                <i class="fa-sharp fa-solid fa-globe"></i>
+                <h2>Network Admin</h2>
+                <p> Overseeing an organization’s computer systems or database networks to ensure proper
+                     maintenance and security. Their duties include working with other IT staff and 
+                     company employees to identify network or computer system needs
+                    , overseeing the installation of new hardware or software and using employee 
+                    feedback to isolate issues.</p>
+                  <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>Cybersecurity</h2>
+                <p>Reviewing computer networks and identifying any potential vulnerabilities, 
+                    installing the necessary software in order to protect it from unauthorized access,
+                     and documenting detections so that future breaches can be mitigated efficiently.</p>
+                  <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <h2>Tech Support</h2>
+                <p> Responsible for assisting customers with technical issues or questions
+                      relating to computer hardware or software devices. 
+                      Their duties include taking phone calls from customers or communicating 
+                      with them through messaging platforms, helping customers diagnose technical 
+                      issues over the phone and speaking with them about installing hardware or 
+                      software on their computers.
+
+                    .</p>
+                  <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="Sub-title"> MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="techsupport.jpg" >
+                <div class="layer">
+                    <h3> Database Design</h3>
+                    <p>
+                        Designing and building efficient reliable and scalabel databases to store
+                    organise and manage data for bussinesses and organizations</p>
+                       <a href="#" ><i class="fa-thin fa-arrow-up-right-from-square"></i></a>
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="active.jpg" >
+                <div class="layer">
+                    <h3> Penetration Testing</h3>
+                    <p>
+                        Identifying vulnerabilities in security systems by attempting to exploit thtem,
+                        in order to provide clients with recommendations for improving their security.
+                    </p>
+                       <a href="#" ><i class="fa-thin fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="netadmins.jpg" >
+                <div class="layer">
+                    <h3> Active Directory</h3>
+                    <p>
+                        Managing users,groups,computers and other resources on a windows domain network to ensure 
+                        efficiency,security and accessibility.
+                    </p>
+                       <a href="#" ><i class="fa-thin fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+<a href="myportfolio.html" class="btn">See more</a>
+    </div>
+</div>
+<!------------contact----------->
+<div id = "contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class ="sub-title"> Contact Me</h1>
+                <p><i class ="fas fa-paper-plane"></i>evansamoama@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+233-555-742-530</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100016423443498" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/ElPrimerotm"target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/fell996/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/amoama-evans-54104112b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="EVANS AMOAMA Resume.pdf" download class = "btn btn2">Download CV</a>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name ="Name" placeholder ="Your Name" required>
+                        <input type="email" name ="Email" placeholder ="Your Email" required>
+                        <textarea name="Message" rows ="6" placeholder ="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id ="msg"></span>
+             </div>
+        </div>
+    </div>
+<div class="copyright">
+    <P> Copyright ©  Made By <i class="fas fa-heart"></i> Evans Amoama on April 2023</P>
+</div>
+</div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");   
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script> 
+
+   <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFoX5vIIau610mskMK-AsnUfny61XETwkRGmCI7k4taihsVcBXDdOhru1eufvxyjnr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
